@@ -1,7 +1,6 @@
-# 🌦️ Ankara Air Quality Prediction Model (Machine Learning)
+ Ankara Air Quality Prediction Model (Machine Learning)
 📌 Project Goal
-Instead of downloading a clean, ready-made dataset from the internet, my goal was to build an end-to-end machine learning pipeline by fetching **real-time data from an API**. 
-
+I created a machine learning project that fetches real-time data from an API.
 I trained machine learning models to predict the air pollution level (PM10) in Ankara using hourly meteorological data (Temperature, Humidity, Wind Speed).
 
 🛠️ Tools & Technologies Used
