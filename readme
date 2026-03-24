@@ -1,9 +1,10 @@
- Ankara Air Quality Prediction Model (Machine Learning)
-📌 Project Goal
+ Ankara Air Quality Prediction Model 
+
+ Project Goal
 I created a machine learning project that fetches real-time data from an API.
 I trained machine learning models to predict the air pollution level (PM10) in Ankara using hourly meteorological data (Temperature, Humidity, Wind Speed).
 
-🛠️ Tools & Technologies Used
+Tools & Technologies Used
 
 * **Python** (Core programming language)
 * **Open-Meteo API** (To fetch weather and air quality data)
@@ -12,14 +13,17 @@ I trained machine learning models to predict the air pollution level (PM10) in A
 * **Matplotlib & Seaborn** (For data visualization and EDA)
 * **Joblib** (To export and save the trained models for future hardware deployment)
 
-🔍 What I Learned & Results
-While building the project, I compared two different models:
-1. **Linear Regression:** I used this as my baseline model. It resulted in a Mean Absolute Error (MAE) of 15.20. However, in a simulated "stormy weather" scenario, it predicted "negative" pollution levels, which contradicts physical reality.
-2. **Random Forest:** Handled this non-linear relationship much better. It reduced the MAE to 13.51 and made much more logical, realistic predictions during extreme weather events.
+What I Learned & Results:
 
-Through this comparison, I learned the importance of choosing a model that fits the physical nature of the data rather than just blindly applying algorithms.
+When I started this project using only three basic variables (Temperature, Humidity, Wind), my mean absolute error (MAE) was 13.51. However, based on my analyses:
 
-🚀 Future Goals (Version 2)
+I Increased the Number of Variables: I added 14 new parameters that directly affect air pollution (exhaust gases, pressure, visibility, etc.).
+
+I Modeled the Impact of Traffic: I derived a “Traffic Density” variable based on hourly data to measure the impact of Ankara’s traffic.
+
+Result: By enriching the dataset, I reduced the error margin to 3.78. This taught me the critical importance of processing raw data and selecting the right features for model performance.
+
+Future Goals (Version 2)
 The current state of the project is just the beginning. In the upcoming stages, I plan to:
 1. **Enrich the Data:** Train the model by adding "Precipitation" (rain) and the "Hour" of the day (to represent traffic density) to drop the error rate into single digits.
-2. **Hardware Integration:** As a prospective EE engineer, my ultimate goal is to combine these saved `.joblib` models with an Arduino and with the necessary sensors, such as humidity sensor and MQ135 gas sensor.
+2. **Hardware Integration:** As a prospective EE engineer, my ultimate goal is to combine these saved `.joblib` models with an ESP32 and with the necessary sensors, such as humidity sensor and MQ135 gas sensor.
