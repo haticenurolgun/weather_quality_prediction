@@ -1,3 +1,2 @@
-Model_Name,MAE_Error,Prediction_Calm_Weather,Prediction_Stormy_Weather
-Linear Regression,15.2,49.35,-18.62
-Random Forest,13.51,49.92,18.91
+Model_Name,MAE_Error (Hata),PREDİCTİON_SCENARİO_1,PREDİCTİON_SCENARİO_2
+Random Forest,3.78,89.61,16.47
