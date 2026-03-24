@@ -25,5 +25,5 @@ Result: By enriching the dataset, I reduced the error margin to 3.78. This taugh
 
 Future Goals (Version 2)
 The current state of the project is just the beginning. In the upcoming stages, I plan to:
-1. **Enrich the Data:** Train the model by adding "Precipitation" (rain) and the "Hour" of the day (to represent traffic density) to drop the error rate into single digits.
+1. **Enrich the Data:** Train the model by adding "Precipitation" (rain) and the "Hour" of the day (to represent traffic density) to drop the error rate into single digits. (done)
 2. **Hardware Integration:** As a prospective EE engineer, my ultimate goal is to combine these saved `.joblib` models with an ESP32 and with the necessary sensors, such as humidity sensor and MQ135 gas sensor.
